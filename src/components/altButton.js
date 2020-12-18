@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-const AltButton = () => {
+const AltButton = ({text}) => {
     return (
-        <div>
-        </div>
+        <button>
+            {text}
+        </button>
     )
 }
 

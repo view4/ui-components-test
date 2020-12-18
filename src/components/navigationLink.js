@@ -1,9 +1,10 @@
 import React from 'react';
 
 
-const NavigationLink = () => {
+const NavigationLink = ({text}) => {
     return (
         <div>
+            {text}
         </div>
     )
 }

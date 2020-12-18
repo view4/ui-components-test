@@ -1,9 +1,11 @@
 import React from 'react';
-
+import searchIndicator from "../assets/search.svg"
 
 const Search = () => {
     return (
-        <div>
+        <div className={"search-container"}>
+            <img src={searchIndicator} />
+                <input type={"text"} />
         </div>
     )
 }
