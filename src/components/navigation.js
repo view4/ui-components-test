@@ -3,7 +3,8 @@ import React from 'react';
 
 const Navigation = () => {
     return (
-        <div>
+        <div className={"navigation-container"}>
+            Navigationbar in here.
         </div>
     )
 }
