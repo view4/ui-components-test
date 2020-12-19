@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import notificationIndicator from "../assets/notifications.svg";
 import { notificationMessages as notifications } from '../constants';
+import "./notifications.css"
 
 const DropdownElement = ({ notification }) => {
     const { title, type, target, time } = notification
@@ -17,7 +18,7 @@ const DropdownElement = ({ notification }) => {
 const Notifications = () => {
     const [ isActive, setIsActive ] = useState(false);
     return (
-        <div>
+        <div className={"notifications-container"}>
             <span onClick={() => !setIsActive(!isActive)}>
                 <img src={notificationIndicator} />
                 <div className={"notification-number"}> 2</div>

@@ -1,9 +1,9 @@
 import React from 'react';
+import "./button.css";
 
-
-const Button = ({text}) => {
+const Button = ({text, bg}) => {
     return (
-        <button>
+        <button className="button" style={{background: bg && bg}}>
             {text}
         </button>
     )
