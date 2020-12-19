@@ -10,10 +10,14 @@ import activeNotificationIndicator from "../assets/notifications-white.svg";
 import "./notifications.css";
 
 const DropdownElement = ({ notification }) => {
-  const { title, type, target, time } = notification;
+  const { title, type, target, time, indicator, indicatorColor } = notification;
   return (
     <div className="notification-item">
-      <div className={"notification-profile-photo"}></div>
+      <div className={"notification-profile-photo"}>
+        <div className={"notification-indicator-container "} style={{background: indicatorColor}}>
+          <img src={indicator} className={"notification-indicator"} />
+        </div>
+      </div>
       <div className={"notification-item-main"}>
         <span>{title}</span>
 

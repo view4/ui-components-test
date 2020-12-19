@@ -59,6 +59,7 @@
   height: 48px;
   margin-left: 20px;
   background: #ffe2ac;
+  position: relative;
   border-radius: 50%;
 }
 
@@ -102,6 +103,23 @@
   color: #5f75ee;
   cursor: pointer;
   margin: 8px 0px;
+}
+
+.notification-indicator-container  {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  align-items: center;
+  border: 2px solid #fff;
+}
+
+.notification-indicator {
+  width: 72%;
+  height: 72%;
 }
 
 /*  Activee notification  */

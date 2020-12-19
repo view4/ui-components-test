@@ -28,7 +28,7 @@ const Main = () => {
           {buttonsTypeA.map((btnText, i) => (
             <Button text={btnText} key={i} displayIndicator={true} />
           ))}
-          <div style={{flexBasis: "100%"}}></div>
+          <div style={{flexBasis: "100%", height: "18px"}}></div>
           {buttonsTypeB.map((btn, i) => (
             <AltButton text={btn.text} indicator={btn.indicator} key={i} />
           ))}
