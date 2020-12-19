@@ -1,10 +1,11 @@
 import React from 'react';
+import "./button.css"
 
-
-const AltButton = ({text}) => {
+const AltButton = ({text, indicator}) => {
     return (
-        <button>
-            {text}
+        <button className="alt-button">
+            <img src={indicator} />
+            <span>{text} </span>
         </button>
     )
 }

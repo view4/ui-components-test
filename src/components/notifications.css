@@ -1,0 +1,126 @@
+.notifications-container {
+  position: relative;
+}
+
+.notifications-indicator-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.notifications-container .notification-number {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 27px;
+  top: 10px;
+}
+
+.notification-items-container {
+  position: absolute;
+  width: 360px;
+  left: -180px;
+  display: flex;
+  background: #fff;
+  border-radius: 24px;
+  flex-direction: column;
+}
+
+.notifcations-text {
+  width: 172px;
+  height: 24px;
+  margin: 32px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #11142d;
+}
+
+.notification-item {
+  display: flex;
+  height: 80px;
+  width: 344px;
+  border-radius: 12px;
+  align-items: center;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+}
+
+.notification-profile-photo {
+  min-width: 48px;
+  height: 48px;
+  margin-left: 20px;
+  background: #ffe2ac;
+  border-radius: 50%;
+}
+
+.notification-item-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+  margin-left: 24px;
+}
+
+.notification-item-main span:first-child {
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 0px;
+}
+
+.notification-item-main span:last-child {
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b2b3bd;
+  margin: 8px 0px;
+}
+
+.notification-time {
+  position: absolute;
+  right: 28px;
+  top: 18px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: right;
+  color: #b2b3bd;
+}
+
+.notification-link {
+  width: 80px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5f75ee;
+  cursor: pointer;
+  margin: 8px 0px;
+}
+
+/*  Activee notification  */
+.notification-item:hover {
+  background: #6c5dd3;
+}
+
+.notification-item:hover *,
+.notification-item:hover .notification-item-main span:last-child {
+  color: #fff;
+}
+
+.notification-items-container .button {
+  align-self: center;
+  margin: 32px;
+  width: 230px;
+  height: 56px;
+}
+
+.notification-items-container .button span {
+  margin: 0px;
+}

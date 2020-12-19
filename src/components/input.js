@@ -1,9 +1,9 @@
 import React from 'react';
-
+import "./input.css";
 
 const Input = () => {
     return (
-        <div>
+        <div className={"input-container"}>
             <span> Your Full Name </span>
             <input type={"text"} placeholder="Name" />
         </div>

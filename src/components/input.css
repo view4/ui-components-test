@@ -1,0 +1,41 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > span {
+  width: 86px;
+  height: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b2b3bd;
+}
+
+.input-container input {
+  height: 56px;
+  width: 370px;
+
+
+  background: #e4e4e44d;
+  border-radius: 8px;
+  border: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 23px;
+  line-height: 20px;
+  color: #11142D;
+}
+
+.input-container  ::placeholder, ::-webkit-input-placeholder { 
+    color: #11142D;
+}
+.input-container input:focus{
+    border: 2px solid #6C5DD3;
+    outline-width: 0px;
+}
+

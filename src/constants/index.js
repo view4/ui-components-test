@@ -1,15 +1,17 @@
-import dashboard from "../assets/navigation/dashboard.svg"
-import inventory from "../assets/navigation/inventory.svg"
-import affiliates from "../assets/navigation/affiliates.svg"
-import orders from "../assets/navigation/orders.svg"
-import customers from "../assets/navigation/customers.svg"
-import website from "../assets/navigation/website.svg"
-import marketing from "../assets/navigation/marketing.svg"
-import admin from "../assets/navigation/admin.svg"
-import inbox from "../assets/navigation/inbox.svg"
+import dashboard from "../assets/navigation/dashboard.svg";
+import inventory from "../assets/navigation/inventory.svg";
+import affiliates from "../assets/navigation/affiliates.svg";
+import orders from "../assets/navigation/orders.svg";
+import customers from "../assets/navigation/customers.svg";
+import website from "../assets/navigation/website.svg";
+import marketing from "../assets/navigation/marketing.svg";
+import admin from "../assets/navigation/admin.svg";
+import inbox from "../assets/navigation/inbox.svg";
+import notifications from "../assets/navigation/notifications.svg";
 
-import notifications from "../assets/navigation/notifications.svg"
-
+import dots from "../assets/tri-dots.svg";
+import channels from "../assets/channels.svg";
+import checkbox from "../assets/checkbox.svg";
 
 const search = [
   {
@@ -37,77 +39,81 @@ const notificationMessages = [
     title: "Glen Greer",
     type: "Commented On",
     target: "Sapiens Illustration",
-    time: "8h",
+    time: "12h",
   },
   {
     title: "Sarah Saunders",
     type: "Just Published",
     target: "Collab Design",
-    time: "8h",
+    time: "16h",
   },
   {
     title: "Sarah Saunders",
     type: "Sent you a message",
     target: "Folio Designer",
-    time: "8h",
+    time: "21h",
   },
   {
     title: "Sarah Saunders",
     type: "Liked",
     target: "Folio Agency",
-    time: "8h",
+    time: "22h",
   },
 ];
 
 const buttonsTypeA = ["Add Product", "Go", " Add More"];
 
-const buttonsTypeB = ["Channel Listing", "More Options", " 1 Selected"];
+const buttonsTypeB = [
+  { indicator: channels, text: "Channel Listing" },
+  { indicator: dots, text: "More Options" },
+  { indicator: checkbox, text: " 1 Selected" },
+];
 
 const navigationLinks = [
   {
-    text:"Dashboard",
-    indicator: dashboard
+    text: "Dashboard",
+    indicator: dashboard,
   },
   {
-    text:"Inventory",
-    indicator: inventory
+    text: "Inventory",
+    indicator: inventory,
   },
   {
-    text:"Affiliates",
-    indicator: affiliates
+    text: "Affiliates",
+    indicator: affiliates,
   },
   {
-    text:"Orders",
-    indicator: orders
+    text: "Orders",
+    indicator: orders,
   },
   {
-    text:"Customers",
-    indicator: customers
+    text: "Customers",
+    indicator: customers,
   },
   {
-    text:"Website",
-    indicator: website
+    text: "Website",
+    indicator: website,
   },
   {
-    text:"Marketing",
-    indicator: marketing
+    text: "Marketing",
+    indicator: marketing,
   },
   {
-    text:"Admin",
-    indicator: admin
-  }
+    text: "Admin",
+    indicator: admin,
+  },
 ];
 const navigationInsights = [
   {
-    text:"Inbox",
+    text: "Inbox",
     indicator: inbox,
-    notifications: 18
+    notifications: 18,
   },
   {
-    text:"Notifications",
+    text: "Notifications",
     indicator: notifications,
-    notifications: 2
-  }
+    notifications: 2,
+  },
 ];
 
 export {

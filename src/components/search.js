@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+
+import Button from "./button";
+
+import { search } from "../constants";
+
 import searchIndicator from "../assets/search.svg";
 import escIndicator from "../assets/esc.svg";
 import rightChevron from "../assets/right.svg";
-
-import { search } from "../constants";
-import Button from "./button";
 
 import "./search.css";
 
