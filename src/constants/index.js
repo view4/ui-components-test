@@ -1,3 +1,16 @@
+import dashboard from "../assets/navigation/dashboard.svg"
+import inventory from "../assets/navigation/inventory.svg"
+import affiliates from "../assets/navigation/affiliates.svg"
+import orders from "../assets/navigation/orders.svg"
+import customers from "../assets/navigation/customers.svg"
+import website from "../assets/navigation/website.svg"
+import marketing from "../assets/navigation/marketing.svg"
+import admin from "../assets/navigation/admin.svg"
+import inbox from "../assets/navigation/inbox.svg"
+
+import notifications from "../assets/navigation/notifications.svg"
+
+
 const search = [
   {
     text: "Earnings by Items",
@@ -13,7 +26,7 @@ const search = [
   },
 ];
 
-const notifications = [
+const notificationMessages = [
   {
     title: "New Order",
     type: "Commented On",
@@ -51,20 +64,55 @@ const buttonsTypeA = ["Add Product", "Go", " Add More"];
 const buttonsTypeB = ["Channel Listing", "More Options", " 1 Selected"];
 
 const navigationLinks = [
-  "Dashboard",
-  "Inventory",
-  "Affiliates",
-  "Orders",
-  "Customers",
-  "Website",
-  "Marketing",
-  "Admin",
+  {
+    text:"Dashboard",
+    indicator: dashboard
+  },
+  {
+    text:"Inventory",
+    indicator: inventory
+  },
+  {
+    text:"Affiliates",
+    indicator: affiliates
+  },
+  {
+    text:"Orders",
+    indicator: orders
+  },
+  {
+    text:"Customers",
+    indicator: customers
+  },
+  {
+    text:"Website",
+    indicator: website
+  },
+  {
+    text:"Marketing",
+    indicator: marketing
+  },
+  {
+    text:"Admin",
+    indicator: admin
+  }
 ];
-const navigationInsights = ["Inbox", "Notifications"];
+const navigationInsights = [
+  {
+    text:"Inbox",
+    indicator: inbox,
+    notifications: 18
+  },
+  {
+    text:"Notifications",
+    indicator: notifications,
+    notifications: 2
+  }
+];
 
 export {
   search,
-  notifications,
+  notificationMessages,
   buttonsTypeA,
   buttonsTypeB,
   navigationLinks,

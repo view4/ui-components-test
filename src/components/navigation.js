@@ -2,26 +2,39 @@ import React from "react";
 import logo from "../assets/logo.svg";
 import { navigationInsights, navigationLinks } from "../constants";
 import NavigationLink from "./navigationLink";
+import "./navigation.css";
 
-const Insight = ({ text }) => {
-  return <div>{text}</div>;
+const Insight = ({ insight }) => {
+  const { text, indicator, notifications } = insight;
+  return (
+    <div className={"insights-link-container"}>
+      <div className={"insights-link-content"}>
+        <img src={indicator} />
+        <span className={"insights-link-text"}>{text} </span>
+        <span className={"notification-number"}> {notifications} </span>
+      </div>
+    </div>
+  );
 };
 
 const Navigation = () => {
   return (
     <div className={"navigation-container"}>
-      Navigationbar in here.
-      <div classsName="nav-header">
-        <img src={logo} />
+      <div className={"navigation-upper"}>
+        <div className="nav-header">
+          <img src={logo} />
+        </div>
+        <div className={"nav-links-section"}>
+          {navigationLinks.map((link, i) => (
+            <NavigationLink link={link} isSelected={i === 0} />
+          ))}
+        </div>
       </div>
-      <div cllassName={"nav-links-section"}>
-        {navigationLinks.map((link, i) => (
-          <NavigationLink text={link} />
-        ))}
-      </div>
-      <div className={"nav-insights-section"}>
+
+      <div className={"nav-insights-section navigation-lower"}>
+        <span className="insights-section-text"> Insights </span>
         {navigationInsights.map((insight, i) => (
-          <Insight text={insight} />
+          <Insight insight={insight} />
         ))}
       </div>
     </div>

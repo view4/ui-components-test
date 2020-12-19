@@ -11,8 +11,10 @@ const Main = () => {
   return (
     <div className={"dash-main-container"}>
       <div className="dash-section">
-        {" "}
-        <h3 className={"section-header"}> search </h3> <Search />{" "}
+        <h3 className={"section-header"}> search </h3>
+        <div>
+          <Search />{" "}
+        </div>
       </div>
       <div className="dash-section">
         {" "}
@@ -24,11 +26,17 @@ const Main = () => {
       </div>
       <div className="dash-section">
         {" "}
-        <h3 className={"section-header"}> Buttons </h3> 
-        { buttonsTypeA.map( (btnText, i ) => <Button text={btnText} key={i}/> )} 
-        <br/>
-        { buttonsTypeB.map( (btnText, i ) => <AltButton text={btnText} key={i}/> )} 
-
+        <h3 className={"section-header"}> Buttons </h3>
+        <div>
+          {" "}
+          {buttonsTypeA.map((btnText, i) => (
+            <Button text={btnText} key={i} />
+          ))}
+          <br />
+          {buttonsTypeB.map((btnText, i) => (
+            <AltButton text={btnText} key={i} />
+          ))}
+        </div>
       </div>
     </div>
   );

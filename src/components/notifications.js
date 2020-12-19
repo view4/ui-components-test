@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import notificationIndicator from "../assets/notifications.svg";
-import { notifications } from '../constants';
+import { notificationMessages as notifications } from '../constants';
 
 const DropdownElement = ({ notification }) => {
     const { title, type, target, time } = notification

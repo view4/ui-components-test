@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import searchIndicator from "../assets/search.svg";
+import escIndicator from "../assets/esc.svg";
+
 import { search } from "../constants";
 import Button from "./button";
 
@@ -17,9 +19,9 @@ const DropdownElement = ({ search }) => {
 const Search = () => {
   const [isFocused, setIsFocused] = useState(false);
   return (
-    <>
-      <div className={"search-container"}>
-        <img src={searchIndicator} />
+    <div className={'search-container'}>
+      <div className={"search-input-container"}>
+        <img src={ !isFocused ? searchIndicator : escIndicator} />
         <input type={"text"} onFocus={() => setIsFocused(true)} />
       </div>
       {isFocused && (
@@ -31,7 +33,7 @@ const Search = () => {
           <Button text="Adddress Search" bg={"#6C5DD3"} />
         </div>
       )}
-    </>
+    </div>
   );
 };
 
